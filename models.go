@@ -11,13 +11,8 @@ type Redis struct {
 	PlayBackDatabase int    `json:"play_back_database"`
 }
 
-type MongoServer struct {
-	Server string `json:"server"`
-	Port   int    `json:"port"`
-}
-
 type Mongo struct {
-	Servers          []MongoServer `json:"servers"`
+	Servers          []string      `json:"servers"`
 	Username         string        `json:"username"`
 	Password         string        `json:"password"`
 	AuthSource       string        `json:"auth_source"`
