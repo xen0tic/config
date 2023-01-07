@@ -25,6 +25,8 @@ type Mongo struct {
 	ReadPref         string        `json:"read_pref"`
 	PlayBackDatabase string        `json:"play_back_database"`
 	AlarmDatabase    string        `json:"alarm_database"`
+	Database         string        `json:"database"`
+	AlarmTable       string        `json:"alarm_table"`
 }
 
 type MySQL struct {
