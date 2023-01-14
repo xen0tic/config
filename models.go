@@ -9,19 +9,20 @@ type Redis struct {
 	Password         string `json:"password"`
 	Database         int    `json:"database"`
 	PlayBackDatabase int    `json:"play_back_database"`
+	KeyPattern       string `json:"key_pattern"`
 }
 
 type Mongo struct {
-	Servers          []string      `json:"servers"`
-	Username         string        `json:"username"`
-	Password         string        `json:"password"`
-	AuthSource       string        `json:"auth_source"`
-	ReplicaSet       string        `json:"replica_set"`
-	ReadPref         string        `json:"read_pref"`
-	PlayBackDatabase string        `json:"play_back_database"`
-	AlarmDatabase    string        `json:"alarm_database"`
-	Database         string        `json:"database"`
-	AlarmTable       string        `json:"alarm_table"`
+	Servers          []string `json:"servers"`
+	Username         string   `json:"username"`
+	Password         string   `json:"password"`
+	AuthSource       string   `json:"auth_source"`
+	ReplicaSet       string   `json:"replica_set"`
+	ReadPref         string   `json:"read_pref"`
+	PlayBackDatabase string   `json:"play_back_database"`
+	AlarmDatabase    string   `json:"alarm_database"`
+	Database         string   `json:"database"`
+	AlarmTable       string   `json:"alarm_table"`
 }
 
 type MySQL struct {
