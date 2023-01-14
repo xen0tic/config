@@ -6,13 +6,15 @@ import (
 )
 
 type Config struct {
-	Redis    Redis    `json:"redis"`
-	Mongo    Mongo    `json:"mongo"`
-	Mysql    MySQL    `json:"mysql"`
-	Rabbitmq RabbitMQ `json:"rabbitmq"`
-	Metric   Metric   `json:"metric"`
-	Grpc     GRPC     `json:"grpc"`
-	Server   Server   `json:"server"`
+	Redis              Redis    `json:"redis"`
+	Mongo              Mongo    `json:"mongo"`
+	Mysql              MySQL    `json:"mysql"`
+	Rabbitmq           RabbitMQ `json:"rabbitmq"`
+	Metric             Metric   `json:"metric"`
+	Grpc               GRPC     `json:"grpc"`
+	Server             Server   `json:"server"`
+	IsLocationToRedis  bool     `json:"is_location_to_redis"`
+	IsLocationToRabbit bool     `json:"is_location_to_rabbit"`
 }
 
 func New(filePath string) (Config, error) {
