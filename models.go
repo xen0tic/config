@@ -63,6 +63,7 @@ type RabbitMQ struct {
 type Metric struct {
 	X3       int `json:"x3"`
 	Gt06     int `json:"gt06"`
+	Xenotic  int  `json:"xenotic"`
 	Parser   int `json:"parser"`
 	Firebase int `json:"firebase"`
 	Syncer   int `json:"syncer"`
