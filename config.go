@@ -15,6 +15,7 @@ type Config struct {
 	Server             Server   `json:"server"`
 	IsLocationToRedis  bool     `json:"is_location_to_redis"`
 	IsLocationToRabbit bool     `json:"is_location_to_rabbit"`
+	WebSiteAddress     string   `json:"web_site_address"`
 	AlarmWorker        int      `json:"alarm_worker"`
 	LocationWorker     int      `json:"location_worker"`
 }
